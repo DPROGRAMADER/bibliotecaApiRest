@@ -46,8 +46,7 @@ public class Autor {
 
     public void setApellido(String apellido) { this.apellido = apellido;}
 
-    public String getPseudonimo() { return pseudonimo;
-    }
+    public String getPseudonimo() { return pseudonimo;}
 
     public void setPseudonimo(String pseudonimo) { this.pseudonimo = pseudonimo;}
 

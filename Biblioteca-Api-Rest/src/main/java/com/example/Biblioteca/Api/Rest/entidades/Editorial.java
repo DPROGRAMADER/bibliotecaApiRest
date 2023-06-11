@@ -6,7 +6,6 @@ import org.springframework.data.repository.cdi.Eager;
 @Entity
 @Table(name="editoriales")
 public class Editorial {
-
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Integer id;

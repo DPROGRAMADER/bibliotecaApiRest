@@ -8,10 +8,11 @@ import org.springframework.stereotype.Service;
 
 @Service
 public class UbicacionServicio {
+
     @Autowired
     private UbicacionRepositorio ubicacionRepositorio;
 
-    public ResponseEntity<Ubicacion>CrearUbicacion(Ubicacion ubicacion){
+    public ResponseEntity<Ubicacion>crearUbicacion(Ubicacion ubicacion){
         Ubicacion resultado=ubicacionRepositorio.save(ubicacion);
         return ResponseEntity.ok(resultado);
     }

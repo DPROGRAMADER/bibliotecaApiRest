@@ -4,17 +4,16 @@ import jakarta.persistence.*;
 import org.hibernate.type.descriptor.jdbc.VarcharJdbcType;
 
 @Entity
-@Table(name = "Ubicaciones")
+@Table(name = "ubicaciones")
 public class Ubicacion {
-
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Integer id;
-    @Column(name = "Pisos",nullable = false)
+    @Column(name = "pisos",nullable = false)
     private String piso;
-    @Column(name = "Salones",nullable = false)
+    @Column(name = "salones",nullable = false)
     private String salon;
-    @Column(name = "Estanterias",nullable = false)
+    @Column(name = "estanterias",nullable = false)
     private String estante;
 
     public Ubicacion() {
